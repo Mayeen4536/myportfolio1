@@ -1,166 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    
-}
-
-section{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    box-sizing: border-box;
-    background: linear-gradient(180deg, #008aff, #ff137d), url(images/bigpic1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-    background-position: center center;
-    background-attachment: fixed;
-}
-section .content{
-    max-width: 700px;
-    text-align: center;
-}
-section .content h1{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 4em;
-    color: rgb(2, 22, 36);
-    margin-top:200px;
-    margin-bottom: 0px;
-    padding-top: 200px;
-    top:-20px;
-}
-section .content p{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.2em;
-    position: relative;
-    width:100%;
-    height:5px;
-    color: rgb(1, 17, 17);
-    margin-bottom: 500px;
-    padding-bottom: 200px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-       
-}
-section .content p:hover{
-    background-color:rgba(246, 245, 248, 0.6);
-    transition: 0.5s;
-    transform: translateY(10px);
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
-}
-section img{
-    position: relative;
-    max-width: 350px;
-    
-    z-index: 3;
-}
-.wave{
-    position: absolute;
-
-    bottom: -10px;
-    left: 0;
-    z-index: 2;
-    
-    
-}
-body{
-    background: #000b76;
-    width: 100%;
-    height: auto;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h2{
-    text-align: center;
-    background: #000b76;
-    padding: 0px;
-    margin: 0px;
-    font-size: 3em;
-    color: white;
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #008aff, #ff137d), url(images/bigpic1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  background-position: center center;
+  background-attachment: fixed;
+}
+section .content {
+  max-width: 700px;
+  text-align: center;
+}
+section .content h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 4em;
+  color: rgb(2, 22, 36);
+  margin-top: 200px;
+  margin-bottom: 0px;
+  padding-top: 200px;
+  top: -20px;
+}
+section .content p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.2em;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  color: rgb(7, 10, 0);
+  margin-bottom: 500px;
+  padding-bottom: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  background-color: rgba(246, 245, 248, 0.6);
+}
+section .content p:hover {
+  background-color: rgba(246, 245, 248, 0.6);
+  transition: 0.5s;
+  transform: translateY(10px);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
+}
+section img {
+  position: relative;
+  max-width: 350px;
+
+  z-index: 3;
+}
+.wave {
+  position: absolute;
+
+  bottom: -10px;
+  left: 0;
+  z-index: 2;
+}
+body {
+  background: #000b76;
+  width: 100%;
+  height: auto;
 }
 
-#container-fluid{
-    position: relative;
-    height:fit-content;
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center !important; 
-    background: linear-gradient(#000b76, red, #000b76);
-    flex-wrap: wrap;
-    z-index: 1;
-    margin-top: 0px;
-    
+h2 {
+  text-align: center;
+  background: #000b76;
+  padding: 0px;
+  margin: 0px;
+  font-size: 3em;
+  color: white;
 }
 
-
-
-#container-fluid .card{
-    font-family: 'Crimson Text', serif;
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.7);
-    border-left: 1px solid rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-}
-#container-fluid .card .content{
-    padding: 20px;
-    text-align: center;
-    transition: 0.5s;
-    transform: translateY(60px);
-    
-    
-}
-#container-fluid .card:hover .content{
-    color:springgreen;
-    transform: translateY(0px);
-    
-    
+#container-fluid {
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center !important;
+  background: linear-gradient(#000b76, red, #000b76);
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-top: 0px;
 }
 
+#container-fluid .card {
+  font-family: "Crimson Text", serif;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+#container-fluid .card .content {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  transform: translateY(60px);
+}
+#container-fluid .card:hover .content {
+  color: springgreen;
+  transform: translateY(0px);
+}
 
-#container-fluid .card .content h3{
-    position: absolute;
-    top: -120px;
-    right: 30px;
-    font-size: 8em;
-    color: rgba(255, 255, 255, 0.15);
-    pointer-events: none;
+#container-fluid .card .content h3 {
+  position: absolute;
+  top: -120px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.15);
+  pointer-events: none;
 }
-#container-fluid .card .content h4{
-    font-size: 1.8em;
-    z-index: 1;
-    
+#container-fluid .card .content h4 {
+  font-size: 1.8em;
+  z-index: 1;
 }
-#container-fluid .card .content p{
-    font-size: 1em;
-    font-weight: 300;
-    margin-top: 20px;
+#container-fluid .card .content p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 20px;
 }
 
-.secondbio{
-    font-size: 2.7em;
-    font-family: 'Crimson Text', serif;
-    color:white;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    background: linear-gradient(#000b76,rgb(3, 56, 11), #000b76);
+.secondbio {
+  font-size: 2.7em;
+  font-family: "Crimson Text", serif;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  /* background: linear-gradient(#000b76, rgb(3, 56, 11), #000b76); */
+}
+
+#container-fluid .card2 {
+  font-family: "Crimson Text", serif;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+#container-fluid .card2 .content h2 {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: transparent;
+  /* transform: translateY(60px); */
+}
+#container-fluid .card2 .content img {
+  padding: 0px 20px 60px 100px;
+  text-align: start;
+  transition: 0.5s;
+  transform: translateY(60px);
+}
+#container-fluid .card2:hover .content {
+  color: springgreen;
+}
+
+.container {
+  align-items: center;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.icon {
+  padding: 0px 10px 30px 0px;
+  margin-left: 10px;
 }
